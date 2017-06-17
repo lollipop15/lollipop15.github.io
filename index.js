@@ -12,7 +12,7 @@ var posts = [];
 app.set('port', 3000);
 app.use(errorhandler());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('static'));
+app.use(express.static);
 //app.use(express.static('static'));
 
 http.createServer(app).listen(app.get('port'), function(){
