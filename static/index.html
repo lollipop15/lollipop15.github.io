@@ -1,0 +1,88 @@
+<html lang="ru">
+  <!-- Заголовок веб-страницы -->
+  <head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Предназначен для управления режимом отображением веб-страницы в браузерах Internet Explorer --> 
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!-- Включает масштабирование на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <title>Школьный сайт</title>      
+  </head>
+  <body>
+  <script src = "indexjs.js" ></script>
+  <link rel="stylesheet" href="indexcss.css" type="text/css"/>
+ <nav class = "navbar navbar-default">
+  <!--<a class="navbar-brand" href="#">Главная</a>-->
+   <div class="container-fluid">
+  <ul class="nav navbar-nav">
+     <li class="nav-item active"><a class = "nav-link" href="#">Главная</a></li>
+    <li class = "nav-item dropdown">
+      <a class = "nav-link dropdown-toggle" data-toggle = "dropdown" href="#"> Давайте знакомиться </a>
+      <ul class="dropdown-menu">
+            <li><a href="#">Текст подпункта</a></li>
+            <li><a href="#">Текст подпункта</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Текст подпункта</a></li>
+          </ul>
+    </li>
+    
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Достижения<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+            <li><a href="#">Текст подпункта</a></li>
+            <li><a href="#">Текст подпункта</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Текст подпункта</a></li>
+          </ul>
+    </li>
+    
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Информация<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Текст подпункта</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Текст подпункта</a></li>
+          </ul>
+    </li>
+    <li class="nav-item pull-xs-right">
+      <a class="nav-link" href="#">Контакты</a>
+    </li>
+     </ul>
+ </div>   
+   </nav>  
+<!-- Конец навигационного меню-->
+<div class="container-fluid"> 
+  <div class="row">
+    <div class="col-md-8 block">
+      <h2>Приветствие</h2>
+	    <form autocomplete="on" method="POST" action = "/news">
+            <p><b>Добавть новость</b></p>
+            <p><b>Введите заголовок</b></p>
+            <p><input type="text" name="text1"></p>
+            <p><b>введите текс статьи</b></p>
+            <p><textarea name="news"></textarea></p>
+			<p><input type="submit" value="Отправить"></p>
+		</form>
+        <div id = 'NEWS'>
+            
+        </div>
+
+        <div class = 'title'>
+            <ul id = 'TITLE'> </ul>
+        </div>
+
+    </div>
+    <div class="col-md-4 block2">
+      <!--<h2>ФОТО</h2>-->
+      <img src="http://funpics86-ru.1gb.ru/albums/tr2/kot-uchitel.jpg" class="img-fluid center-block img-circle">
+    </div>
+  </div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>
